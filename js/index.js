@@ -14,7 +14,7 @@ const skills = ['JavaScript', 'HTML', 'CSS'];
 
 const skillsSection = document.getElementById('skills');
 
-skillsList = skillsSection.querySelector('ul');
+let skillsList = skillsSection.querySelector('ul');
 
 for (let i = 0; i < skills.length; i++) {
   const skill = document.createElement('li'); 
