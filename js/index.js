@@ -31,19 +31,19 @@ messageForm.addEventListener('submit', (event) => {
   let message = event.target.message;
   let newMessage = document.createElement('li');
 
-newMessage.innerHTML = "<a href='mailto:" + email.value + "'>" + name.value + "</a><span>  wrote: " + message.value + "</span>   ";
-messageList.appendChild(newMessage);
+  newMessage.innerHTML = "<a href='mailto:" + email.value + "'>" + name.value + "</a><span>  wrote: " + message.value + "</span>   ";
+  messageList.appendChild(newMessage);
 
-let removeButton = document.createElement('button');
-removeButton.innerText = "remove";
-removeButton.setAttribute("type", "button");
-removeButton.addEventListener('click', (event) => {
+  let removeButton = document.createElement('button');
+  removeButton.innerText = "remove";
+  removeButton.setAttribute("type", "button");
+  removeButton.addEventListener('click', (event) => {
   let entry = removeButton.parentNode;
   entry.remove();
   messagesSectionShowHide();
   
-})
-newMessage.appendChild(removeButton);
+  })
+  newMessage.appendChild(removeButton);
 
   console.log (name.value, email.value, message.value)
   messagesSectionShowHide();
