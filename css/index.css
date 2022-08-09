@@ -31,6 +31,11 @@ h2{
 
 }
 
+.leave_message{
+  display: flex;
+  flex-wrap: wrap;
+  }
+
 #skills li{
   font-weight: bold;
   list-style: square;
@@ -71,7 +76,7 @@ form > button{
   padding: 20px;
   font-size: 15px;
   border-radius: 25% 10%;
-}
+} 
 /* footer section */
 footer {
   padding: 1px;
@@ -84,12 +89,12 @@ footer {
 /* Media Queries for Tablets */
 @media screen and (min-width: 767px) and (max-width: 1024px) {
   label {
-      color: #1ded02;
+      color: #010600;
   }
 }
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 767px) {
   label {
-      color: greenyellow;
+      color: rgb(10, 10, 9);
   }
 }
