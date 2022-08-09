@@ -4,10 +4,10 @@ let thisYear = today.getFullYear();
 let footer = document.querySelector('footer');
 let copyright = document.createElement('p');
 
-copyright.innerHTML = `Vadim Dmitrochenko ${thisYear}`;
+copyright.innerHTML = "&nbsp;&nbsp;&copy; Vadim Dmitrochenko, " + thisYear;;
 footer.appendChild(copyright);
 
-let skills = ['HTML', 'CSS','JavaScript'];
+let skills = ['HTML', 'CSS','JavaScript','Google Services','Github','VS-Code','Debugging'];
 let skillsSection = document.getElementById('skills');
 let skillsList = skillsSection.querySelector('ul');
 
@@ -36,11 +36,10 @@ messageForm.addEventListener('submit', (event) => {
   removeButton.setAttribute("type", "button");
   removeButton.addEventListener('click', (event) => {
   let entry = removeButton.parentNode;
-  entry.remove();
-  messagesSectionShowHide();
-  });
+   entry.remove();
+   messagesSectionShowHide();
+});
   newMessage.appendChild(removeButton);
-
   messageList.appendChild(newMessage);
   console.log (name.value, email.value, message.value);
   messagesSectionShowHide();
