@@ -7,6 +7,7 @@ let copyright = document.createElement('p');
 copyright.innerHTML = "&nbsp;&nbsp;&copy; Vadim Dmitrochenko, " + thisYear;;
 footer.appendChild(copyright);
 
+let skills = ['HTML', 'CSS','JavaScript','Github','Google Services','VS-Code','Debugging'];
 let skills = ['HTML', 'CSS','JavaScript','Google Services','Github','VS-Code','Debugging'];
 let skillsSection = document.getElementById('skills');
 let skillsList = skillsSection.querySelector('ul');
@@ -32,12 +33,14 @@ messageForm.addEventListener('submit', (event) => {
   newMessage.innerHTML = "<a href='mailto:" + email.value + "'>" + name.value + "</a><span>  wrote: " + message.value + "</span>   ";
 
   let removeButton = document.createElement('button');
+
+  removeButton.innerText = "Remove";
   removeButton.innerText = "remove";
   removeButton.setAttribute("type", "button");
   removeButton.addEventListener('click', (event) => {
   let entry = removeButton.parentNode;
-   entry.remove();
-   messagesSectionShowHide();
+  entry.remove();
+  messagesSectionShowHide();
 });
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
@@ -53,3 +56,4 @@ function messagesSectionShowHide(){
       messageSection.style.display = "none";
   }
 }
+

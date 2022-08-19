@@ -1,4 +1,15 @@
 body{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: 'Inter', sans-serif, monospace;
+  font-size: 18px;
+  margin: 20px; 
+  padding: 30px; 
+}
+
+section{ 
+  margin: 20px; 
+  padding: 30px; 
   background-color: rgb(0, 193, 223);
   color: rgb(0, 0, 0);
   font-family: 'Courier New', Courier, monospace;
@@ -10,6 +21,10 @@ body{
 #about {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
+  background-color: rgb(0, 135, 224);
+  text-align: center;
+  font-size: 25px;
+  padding-top: 22px;
   background-color: rgb(128, 255, 212);
   text-align: center;
   font-size: 25px;
@@ -25,15 +40,63 @@ h2{
   font-weight: 600;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color:rgb(0, 0, 0);
+  margin-bottom: 0.5rem;
+}
+
+
 #experience {
   list-style: square;
   border-block: dashed rgb(9, 133, 210);
+}
 
+#expList ul{
+  list-style-type: none;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#experience li{
+  color: rgba(0, 0, 0, 0.939);
+
+#experience {
+  list-style: square;
+  border-block: dashed rgb(9, 133, 210);
 }
 
 .leave_message{
   display: flex;
   flex-wrap: wrap;
+}
+
+#skills li{
+  font-weight: bold;
+  list-style: none;
+  border-radius: var(--rounded);
+  border: 2px solid rgb(0, 135, 224);
+  color: rgb(0, 135, 224);
+  background-color:white;
+  display: inline-flex;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#certificates,
+#connect,
+#messages {
+  border-bottom: dashed rgb(9, 133, 210);
   }
 
 #skills li{
@@ -44,6 +107,9 @@ h2{
 
 #certificates li{
   list-style: square;
+  flex-direction: column;
+  align-content: flex-start;
+  display: flex;
   border-block: dashed rgb(9, 133, 210);
 }
 
@@ -53,6 +119,53 @@ font-weight: bold;
 
 /* message section */
 form{
+  margin: 20px; 
+  padding: 30px; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content:flex-start;
+  display: flex;
+}
+
+form > label{
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+  flex: 1;
+  }
+
+form > input,
+form > textarea{
+  font-size: 15px;
+  padding: 5px;
+  margin:5px;
+  border-style: solid;
+  flex: 5;
+}
+
+form > textarea{
+display: inline-block;
+}
+
+form > button,
+button{
+  background-color: rgb(0, 135, 224);
+  padding: 15px;
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  border-radius: 20px;
+} 
+
+#messages ul {
+  font-size: 20px;
+  font-style: oblique 23deg;
+  
+}
+/* footer section */
+footer {
+  padding: 1px;
+  border-style: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   padding: 35px;
   background-color: rgb(128, 255, 212);
   border-style: inset;
@@ -88,12 +201,59 @@ footer {
 
 /* Media Queries for Tablets */
 @media screen and (min-width: 767px) and (max-width: 1024px) {
+  section{
+    display: inline;
+    margin: 20px;
+    padding: 10px;
+  }
+  ul#nav{
+    display: contents;
   label {
       color: #010600;
   }
 }
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 767px) {
+  section {
+    display: inline;
+    margin: 10px;
+    padding: 5px;
+  }
+  ul#nav{
+    display: contents;
+  }
+}
+
+ul#nav {
+background-color: rgb(0, 135, 224);
+font-weight: bold;
+top:0px;
+width: 90.47%;
+list-style-type: none;
+overflow: hidden;
+margin:.20px;
+margin-left: 20px;
+padding: 10px;;
+position:fixed;
+overflow: hidden;
+}
+
+ul#nav li {
+float: right;
+}
+
+ul#nav li a {
+display: block;
+color: rgba(0, 0, 0, 0.939);
+text-align:right;
+padding: 8px;
+text-decoration: none;
+}
+
+ul#nav li a:hover {
+background-color: rgb(255, 255, 255);
+}
+
   label {
       color: rgb(10, 10, 9);
   }
