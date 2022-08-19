@@ -10,6 +10,12 @@ body{
 section{ 
   margin: 20px; 
   padding: 30px; 
+  background-color: rgb(0, 193, 223);
+  color: rgb(0, 0, 0);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  margin : 30px;
+  padding: 40px;
 }
 
 #about {
@@ -19,6 +25,9 @@ section{
   text-align: center;
   font-size: 25px;
   padding-top: 22px;
+  background-color: rgb(128, 255, 212);
+  text-align: center;
+  font-size: 25px;
 }
 
 h1{
@@ -60,6 +69,10 @@ h6 {
 
 #experience li{
   color: rgba(0, 0, 0, 0.939);
+
+#experience {
+  list-style: square;
+  border-block: dashed rgb(9, 133, 210);
 }
 
 .leave_message{
@@ -84,6 +97,12 @@ h6 {
 #connect,
 #messages {
   border-bottom: dashed rgb(9, 133, 210);
+  }
+
+#skills li{
+  font-weight: bold;
+  list-style: square;
+  border-block: dashed rgb(9, 133, 210);
 }
 
 #certificates li{
@@ -91,6 +110,7 @@ h6 {
   flex-direction: column;
   align-content: flex-start;
   display: flex;
+  border-block: dashed rgb(9, 133, 210);
 }
 
 .title {
@@ -146,6 +166,36 @@ footer {
   border-style: rgb(255, 255, 255);
   border-color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
+  padding: 35px;
+  background-color: rgb(128, 255, 212);
+  border-style: inset;
+  border-color: rgb(0, 0, 0);
+}
+
+form > label{
+  font-weight: bold;
+  color:rgb(0, 0, 0);
+}
+form > input,
+form > textarea{
+  font-size: 23px;
+  padding: 5px;
+  margin: 10px;
+  border-style: inset;
+}
+
+form > button{
+  background-color: rgb(0, 193, 223);
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 25% 10%;
+} 
+/* footer section */
+footer {
+  padding: 1px;
+  border-style: inset;
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(128, 255, 212);
   text-align: left;
 }
 
@@ -158,6 +208,8 @@ footer {
   }
   ul#nav{
     display: contents;
+  label {
+      color: #010600;
   }
 }
 /* Media Queries for Mobile Devices */
@@ -200,4 +252,9 @@ text-decoration: none;
 
 ul#nav li a:hover {
 background-color: rgb(255, 255, 255);
+}
+
+  label {
+      color: rgb(10, 10, 9);
+  }
 }
