@@ -10,15 +10,6 @@ body{
 section{ 
   margin: 20px; 
   padding: 30px; 
-<<<<<<< HEAD
-=======
-  background-color: rgb(0, 193, 223);
-  color: rgb(0, 0, 0);
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
-  margin : 30px;
-  padding: 40px;
->>>>>>> cb5dec37bf365de5e1970a7a86760efe1f0e7d77
 }
 
 #about {
@@ -28,12 +19,6 @@ section{
   text-align: center;
   font-size: 25px;
   padding-top: 22px;
-<<<<<<< HEAD
-=======
-  background-color: rgb(128, 255, 212);
-  text-align: center;
-  font-size: 25px;
->>>>>>> cb5dec37bf365de5e1970a7a86760efe1f0e7d77
 }
 
 h1{
@@ -75,13 +60,6 @@ h6 {
 
 #experience li{
   color: rgba(0, 0, 0, 0.939);
-<<<<<<< HEAD
-=======
-
-#experience {
-  list-style: square;
-  border-block: dashed rgb(9, 133, 210);
->>>>>>> cb5dec37bf365de5e1970a7a86760efe1f0e7d77
 }
 
 .leave_message{
@@ -102,27 +80,15 @@ h6 {
   margin-right: 0.5rem;
 }
 
-<<<<<<< HEAD
 #projects ul {
   justify-content:left;
   font-weight: bold;
 }
 
-=======
->>>>>>> cb5dec37bf365de5e1970a7a86760efe1f0e7d77
 #certificates,
 #connect,
 #messages {
   border-bottom: dashed rgb(9, 133, 210);
-<<<<<<< HEAD
-=======
-  }
-
-#skills li{
-  font-weight: bold;
-  list-style: square;
-  border-block: dashed rgb(9, 133, 210);
->>>>>>> cb5dec37bf365de5e1970a7a86760efe1f0e7d77
 }
 
 #certificates li{
@@ -130,10 +96,6 @@ h6 {
   flex-direction: column;
   align-content: flex-start;
   display: flex;
-<<<<<<< HEAD
-=======
-  border-block: dashed rgb(9, 133, 210);
->>>>>>> cb5dec37bf365de5e1970a7a86760efe1f0e7d77
 }
 
 .title {
@@ -181,7 +143,7 @@ button{
 #messages ul {
   font-size: 20px;
   font-style: oblique 23deg;
-  
+
 }
 /* footer section */
 footer {
@@ -189,7 +151,6 @@ footer {
   border-style: rgb(255, 255, 255);
   border-color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
-<<<<<<< HEAD
   text-align: left;
 }
 
@@ -206,11 +167,11 @@ ul#nav {
   position:fixed;
   overflow: hidden;
 }
-  
+
   ul#nav li {
   float: left;
 }
-  
+
   ul#nav li a {
   display: block;
   color: rgba(0, 0, 0, 0.939);
@@ -218,46 +179,13 @@ ul#nav {
   padding: 8px;
   text-decoration: none;
 }
-  
+
   ul#nav li a:hover {
   background-color: rgb(255, 255, 255);
 }
 
 #me {
   width: 80px; height: 80px; border-radius: 25px; margin-right: 10px; margin-left: 5px; 
-=======
-  padding: 35px;
-  background-color: rgb(128, 255, 212);
-  border-style: inset;
-  border-color: rgb(0, 0, 0);
-}
-
-form > label{
-  font-weight: bold;
-  color:rgb(0, 0, 0);
-}
-form > input,
-form > textarea{
-  font-size: 23px;
-  padding: 5px;
-  margin: 10px;
-  border-style: inset;
-}
-
-form > button{
-  background-color: rgb(0, 193, 223);
-  padding: 20px;
-  font-size: 15px;
-  border-radius: 25% 10%;
-} 
-/* footer section */
-footer {
-  padding: 1px;
-  border-style: inset;
-  border-color: rgb(0, 0, 0);
-  background-color: rgb(128, 255, 212);
-  text-align: left;
->>>>>>> cb5dec37bf365de5e1970a7a86760efe1f0e7d77
 }
 
 /* Media Queries for Tablets */
@@ -269,11 +197,6 @@ footer {
   }
   ul#nav{
     display: contents;
-<<<<<<< HEAD
-=======
-  label {
-      color: #010600;
->>>>>>> cb5dec37bf365de5e1970a7a86760efe1f0e7d77
   }
 }
 /* Media Queries for Mobile Devices */
@@ -287,41 +210,3 @@ footer {
     display: contents;
   }
 }
-
-<<<<<<< HEAD
-=======
-ul#nav {
-background-color: rgb(0, 135, 224);
-font-weight: bold;
-top:0px;
-width: 90.47%;
-list-style-type: none;
-overflow: hidden;
-margin:.20px;
-margin-left: 20px;
-padding: 10px;;
-position:fixed;
-overflow: hidden;
-}
-
-ul#nav li {
-float: right;
-}
-
-ul#nav li a {
-display: block;
-color: rgba(0, 0, 0, 0.939);
-text-align:right;
-padding: 8px;
-text-decoration: none;
-}
-
-ul#nav li a:hover {
-background-color: rgb(255, 255, 255);
-}
-
-  label {
-      color: rgb(10, 10, 9);
-  }
-}
->>>>>>> cb5dec37bf365de5e1970a7a86760efe1f0e7d77
