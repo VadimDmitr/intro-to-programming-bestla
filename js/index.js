@@ -24,10 +24,10 @@ let messageForm = document.querySelector('[name = "leave_message"]');
 messageForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  let name = event.target.name;
-  let email = event.target.email;
-  let message = event.target.message;
-  let newMessage = document.createElement('li');
+let name = event.target.name;
+let email = event.target.email;
+let message = event.target.message;
+let newMessage = document.createElement('li');
 
   newMessage.innerHTML = "<a href='mailto:" + email.value + "'>" + name.value + "</a><span>  wrote: " + message.value + "</span>   ";
 
@@ -52,4 +52,29 @@ function messagesSectionShowHide(){
   } else {
       messageSection.style.display = "none";
   }
-}
+};
+
+//Fetch GitHub Repositories//
+let githubRequest = new XMLHttpRequest();
+githubRequest.open("GET" , "https://api.github.com/users/VadimDmitr/repos");
+githubRequest.send ();
+//Handle Response from Server//
+githubRequest.onreadystatechange = function () {
+    if (githubRequest.readyState === 4) {
+        let repositories = JSON.parse(githubRequest.responseText);
+        console.log(repositories);
+//Display Repositories//
+        let projectSection=document.getElementById("projects");
+        let projectList = projectSection.querySelector ("ul");
+    
+        for (let i=0; i<repositories.length; i++) {
+            let project= document.createElement ('li');
+            let repoLink=document.createElement('a');
+            repoLink.href=repositories[i].html_url;
+            repoLink.innerHTML = repositories[i].name;
+            projectList.appendChild(project);
+            project.appendChild(repoLink)
+
+        }
+    }
+};
