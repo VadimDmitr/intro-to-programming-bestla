@@ -23,21 +23,20 @@ let messageForm = document.querySelector('[name = "leave_message"]');
 /* New Message Submission */
 messageForm.addEventListener('submit', (event) => {
   event.preventDefault();
-
 let name = event.target.name;
 let email = event.target.email;
 let message = event.target.message;
 let newMessage = document.createElement('li');
 
-  newMessage.innerHTML = "<a href='mailto:" + email.value + "'>" + name.value + "</a><span>  wrote: " + message.value + "</span>   ";
+newMessage.innerHTML = "<a href='mailto:" + email.value + "'>" + name.value + "</a><span>  wrote: " + message.value + "</span>   ";
 
   let removeButton = document.createElement('button');
   removeButton.innerText = "Remove";
+  //removeButton.innerText = "remove";
   removeButton.setAttribute("type", "button");
   removeButton.addEventListener('click', (event) => {
   let entry = removeButton.parentNode;
-   entry.remove();
-   messagesSectionShowHide();
+  entry.remove();
 });
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
@@ -78,3 +77,4 @@ githubRequest.onreadystatechange = function () {
         }
     }
 };
+
