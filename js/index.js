@@ -3,7 +3,6 @@ let today = new Date();
 let thisYear = today.getFullYear();
 let footer = document.querySelector('footer');
 let copyright = document.createElement('p');
-
 copyright.innerHTML = "&nbsp;&nbsp;&copy; Vadim Dmitrochenko, " + thisYear;;
 footer.appendChild(copyright);
 
@@ -79,22 +78,34 @@ githubRequest.onreadystatechange = function () {
     }
 };*/
 // Fetch API //
-fetch("https://api.github.com/users/VadimDmitr/repos")
-    .then(response => response.json())
-    .then(repositories => {
-        //Display Repositories//
-        console.log(repositories);
-        let projectSection = document.getElementById("projects");
-        let projectList = projectSection.querySelector("ul");
-
-        for (let i = 0; i < repositories.length; i++) {
-            let project = document.createElement('li');
-            let repoLink = document.createElement('a');
-            repoLink.href = repositories[i].html_url;
-            repoLink.innerHTML = repositories[i].name;
-            project.appendChild(repoLink);
-            projectList.appendChild(project);
-
-        }
-    })
-    .catch(error => alert("Something went wrong!", error));
+fetch('https://api.github.com/users/VadimDmitr/repos')
+  .then((res) => res.json())
+  // .then((data) => console.log(data))//
+  .then((data) => {
+    const repositories = data;
+    const projectSection = document.getElementById('projects');
+    const projectList = projectSection.querySelector('div');
+    for (let i = 0; i < repositories.length; i +=1) {
+      let project = document.createElement('div');
+      project.classList.add('project-container', 'project-card');
+      // project.innerHTML = repositories[i].name;
+      project.innerHTML =
+      `<a href="${repositories[i].html_url}"
+      target="_blank" class="project-link link link--no-color">
+      <img
+      src="image/webdev.png"
+      width="250"
+      alt="project"
+      loading="lazy"
+      class="project-pic"
+      />
+      <h3 class="project-title">${repositories[i].name}</h3>
+      <p class="project-details">
+      Code the Dream software courses: HTML, CSS, Javascript, AJAX, API fetch, Git/GitHub, REACT.JS
+      </p>
+      Check it Out</a>`;
+      projectList.appendChild(project);
+    };
+  })
+  .catch(error => console.log('Looks like there was a problem', error))
+    

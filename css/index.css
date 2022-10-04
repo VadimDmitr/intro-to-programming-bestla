@@ -1,25 +1,56 @@
 body {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: #282c34;
+  color: white;
   font-family: 'Inter', sans-serif, monospace;
   font-size: 18px;
   margin: 0px;
-  padding: 30px;
+  padding: 0px;
 }
 
 section {
   margin: 20px;
-  padding: 30px;
+  padding: 15px;
 }
 
+p {
+  font-size: 22px;
+}
 #about {
+  
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
-  background-color: #3a8bf6;
+  background-color: #282c34;
   text-align: center;
-  font-size: 25px;
+  font-size: 80px;
   padding-top: 22px;
+  /*display: flex;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  background-color: #282c34;
+  align-items: center;
+  /* text-align: left; */
+  /*font-size: 25px;
+  animation: slide-left 20s linear infinite;*/
 }
+
+/*@keyframes slide-left {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+}*/
+
 
 h1 {
   font-size: 38px;
@@ -38,14 +69,15 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  color: rgb(0, 0, 0);
+  color: white;
   margin-bottom: 0.5rem;
 }
 
 #experience {
   list-style: square;
-  border-block: dashed #4994f8;
+  border-block: dashed #3fc5a8;
 }
+
 
 #expList ul {
   list-style-type: none;
@@ -72,24 +104,69 @@ h6 {
   list-style: none;
   border-radius: var(--rounded);
   border: 2px solid rgb(0, 135, 224);
-  color: rgb(0, 135, 224);
+  color: #3fc5a8;
   background-color: white;
   display: inline-flex;
-  padding: 0.25rem 0.75rem;
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
+  padding: 0.45rem 1rem;
+  margin-bottom: 0.8rem;
+  margin-right: 0.8rem;
 }
 
-#projects ul {
-  justify-content: left;
+.project-pic {
+  height: 10rem;
+  border-radius: 3px;
+}
+
+#projects {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.projList {
+  display: flex;
+  padding: 10px;
+}
+
+.project-container {
+  text-align: center;
+  width: 250px;
+  align-items: center;
+  margin: auto;
+  padding: 20px 20px;
+}
+
+.project-card {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px gray;
+  height: 25rem;
+  align-items: center;
+}
+
+/* .project-details {
+  margin-bottom: 2px;
+  font-weight: lighter;
+  color: black;
+} */
+
+
+.project-title {
+  margin-top: 0.5rem;
   font-weight: bold;
+  color: black;
+}
+
+
+.project-link {
+  font-weight: bolder;
+  color: #3f666b;
 }
 
 #skills,
 #certificates,
 #connect,
 #messages {
-  border-bottom: dashed #4994f8;
+  border-bottom: dashed #3fc5a8;
 }
 
 #certificates li {
@@ -97,10 +174,24 @@ h6 {
   flex-direction: column;
   align-content: flex-start;
   display: flex;
+  margin-top: auto;
 }
 
 .title {
   font-weight: bold;
+}
+
+.contact-links {
+  display: inline-block;
+  padding: 1rem 0rem;
+  
+}
+
+.contact-details {
+  font-size: large;
+  padding: 0rem 0.5rem;
+  font-size: 25px;
+  color: white;
 }
 
 /* message section */
@@ -115,7 +206,7 @@ form {
 
 form>label {
   font-size: 21px;
-  color: rgb(0, 0, 0);
+  color: white;
   flex: 1;
 }
 
@@ -134,9 +225,9 @@ form>textarea {
 
 form>button,
 button {
-  background-color: #3a8bf6;
+  background-color: #3f666b;
   padding: 15px;
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 20px;
   border-radius: 20px;
 }
@@ -149,25 +240,25 @@ button {
 
 /* footer section */
 footer {
-  padding: 1px;
+  padding: 35px;
   border-style: rgb(255, 255, 255);
   border-color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  background-color: #3f666b;
   text-align: left;
 }
 
 ul#nav {
-  background-color: #3a8bf6;
+  background-color: #3f666b;
   font-weight: bold;
+  font-size: 20px;
   top: 0px;
-  width: 92.86%;
+  width: 100%;
   list-style-type: none;
   overflow: hidden;
-  margin: 20px;
-  margin-left: 20px;
+  margin: 0px 0px 50px 0px;
   padding: 10px;
-  position: fixed;
-  overflow: hidden;
+  border: 30px;
+  /* position: fixed;*/
 }
 
 ul#nav li {
@@ -176,45 +267,47 @@ ul#nav li {
 }
 
 ul#nav li a {
-  color: rgba(0, 0, 0, 0.939);
-  padding: 8px;
-  text-decoration: none;
+  color: white;
+  padding: 15px;
 }
 
 ul#nav li a:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: #282c34;
+}
+
+.main {
+  margin-top: 30px;
+  /* Add a top margin to avoid content overlay */
 }
 
 #image_of_me {
-  width: 60px;
-  height: 60px;
-  border-radius: 25px;
-  margin-right: 10px;
-  margin-left: 5px;
+  width: 130px;
+  height: 130px;
+  border-radius: 999px;
 }
 
 /* Media Queries for Tablets */
 @media screen and (min-width: 767px) and (max-width: 1024px) {
   section {
-      display: inline;
-      margin: 20px;
-      padding: 10px;
+    display: inline;
+    margin: 20px;
+    padding: 10px;
   }
 
   ul#nav {
-      display: contents;
+    display: contents;
   }
 }
 
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 767px) {
   section {
-      display: inline;
-      margin: 10px;
-      padding: 5px;
+    display: inline;
+    margin: 10px;
+    padding: 5px;
   }
 
   ul#nav {
-      display: contents;
+    display: contents;
   }
 }

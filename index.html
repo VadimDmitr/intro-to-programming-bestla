@@ -7,7 +7,8 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Vadim Dmitrochenko">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,46 +16,39 @@
 </head>
  <body>
      <ul id="nav">
-        <li><img src="image/VD.jpeg" alt="Image" id="image_of_me";></li>
-        <li><a href="#message">Leave a Message</a></li>
-        <li><a href="#connect">Connect</a></li>
-        <li><a href="#certificates">Licenses and Certificates</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><img src="image/vad.jpeg" alt="Image" id="image_of_me";></li>
         <li><a href="#about">About</a></li>
-
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certificates">Licenses and Certificates</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#connect">Connect</a></li>
+        <li><a href="#messages">Leave a Message</a></li>
     </ul>
     <section id="about">
-        <h1>About</h1>
+        <h1>User Interface developer</h1>
         <p> Hello, my name is Vadim.<br>
             And I enjoy Web development.</p>
     </section>
-    <section id="skills">
-        <!-- Skills added via JavaScript file-->
-        <h2>Skills</h2>
-        <ul>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-        </ul>
+    <section class="projects" id="projects">
+        <h1 class="projects-title">Check out My Projects</h1>
+        <div class="projList">
+        </div>
     </section>
     <section id="experience">
         <h2>Experience</h2>
         <ul id="expList">
             <li>
-                <h4><!---Team Associate, Walmart-->Supercenter - April 2020 - Current<br>
-                    Morrisville, NC</h4><br>
+                <h3>Team Associate, Walmart Supercenter - April 2020 - Current<br>
+                    Morrisville, NC</h3><br>
                 <!--- Contribute to team success by exceeding team sales goals<br>
                 - Respond to team leads requests in a prompt and efficient manner<br>
                 - Excellent customer service<br>
                 - Follow company policies and procedures including but not limited to attendance, punctuality, dress code, etc.<br>-->
             </li>
             <li>
-                <h4>IT Administrator, Sokolinaya Gora, LLC - March 2018 – November 2019<br>
-                    Moscow, Russian Federation</h4><br>
+                <h3>IT Administrator, Sokolinaya Gora, LLC - March 2018 – November 2019<br>
+                    Moscow, Russian Federation</h3><br>
                  <!---- Experience using Active Directory to setup new / manage users.<br>
                 - Experience in installing / configuring / mapping network drives & printers<br>
                 - Set up hardware and software products and equipment with accordance to specified requirements.<br>
@@ -62,8 +56,8 @@
                 - Conducted operating system installation and configuration.<br>-->
             </li>
             <li>
-                <h4>Senior Billing Specialist, Sokolinaya Gora, LLC - April 2014 – February 2018 <br>
-                    Moscow, Russian Federation</h4><br>
+                <h3>Senior Billing Specialist, Sokolinaya Gora, LLC - April 2014 – February 2018 <br>
+                    Moscow, Russian Federation</h3><br>
                 <!--    - Collected data and developed detailed spreadsheets to identify trends and create revenue, profitability, and expense forecasts.<br>
                 - Consult on knowledge best practices for employees, managers, heads of departments.<br>
                 - Reviewed financial reports and streamlined operations to increase productivity and company profits.<br>
@@ -75,7 +69,7 @@
                 - Completed troubleshooting of malfunctions and diagnosed issues.<br>-->
             </li>
             <li>
-                <h4>Account Development Manager, AVIT, LLC - August 2007 - July 2013<br>
+                <h3>AVIT, LLC - August 2007 - July 2013<br>
                     Orscha, Republic of Belarus</h3><br>
                 <!--    - Prepared financial and analytical reviews and reports.<br>
                 - Fostered new relationships and expand business relationships with existing clients.<br>
@@ -86,7 +80,7 @@
     <section id='certificates'>
         <h2>Licenses and Certificates</h2>
         <ul>
-            <li class="title"> Code The Dream: HTML, CSS, JavaScript, Git, Debugging, JSON, AJAX, API fetch.</li>
+            <li class="title"> Code The Dream: HTML, CSS, JavaScript, Git, Debugging, AJAX, API fetch.</li>
             <li>Completion Date: 09/2022</li><br>
             <li class="title"> Certification Title: CompTIA A+ Hardware and Software.</li>
             <li>Completion Date: 02/2022</li><br>
@@ -98,14 +92,19 @@
             <li>Completion Date: 04/2021 – 11/2021</li><br>
         </ul>
     </section>
-    <section id="connect">
-        <h1>Connect</h1>
+    <section id="skills">
+        <!-- Skills added via JavaScript file-->
+        <h1>Skills</h1>
         <ul>
-            <li> <a href="https://www.linkedin.com/in/vadim-dmitrochenko-14a88b221/">My LinkedIn page</a></li>
-            <li> <a href="https://github.com/VadimDmitr">My GitHub page</a></li>
-           <!---- <li> <a href="https://www.facebook.com/vadim.vegas">My Facebook page</a></li>-->
-            <li><a href="mailto:vadzzimluch@gmail.com">Email</a></li>
         </ul>
+    </section>
+    <section id="connect">
+        <h1>Let's Work Together!</h1>
+        <p>Feel free to reach out through the following platforms:</p>
+        <div class="contact-links">
+                        <a href="https://github.com/VadimDmitr" target="_blank" class="link link--no-color contact-details" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/vadim-dmitrochenko-14a88b221/" target= "_blank"  class="link link--no-color contact-details" title="linkedin"><i class="fab fa-linkedin"></i> Linkedin</a>
+                    </div>
     </section>
     <section id="message">
         <h2>Leave a Message</h2>
