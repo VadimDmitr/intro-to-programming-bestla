@@ -7,7 +7,7 @@ copyright.innerHTML = "&nbsp;&nbsp;&copy; Vadim Dmitrochenko, " + thisYear;;
 footer.appendChild(copyright);
 
 /* Skills */
-let skills = ['HTML', 'CSS', 'JavaScript', 'Github', 'Google Services', 'VS-Code', 'Debugging'];
+let skills = ['HTML', 'CSS', 'JavaScript', 'Git/Github', 'Google Services', 'VS-Code', 'Debugging'];
 let skillsSection = document.getElementById('skills');
 let skillsList = skillsSection.querySelector('ul');
 
