@@ -123,8 +123,10 @@ h6 {
 }
 
 .projList {
-  display: flex;
-  padding: 10px;
+  display: grid; /* display the items in a grid layout */
+  grid-template-columns: repeat(3, 1fr); /* create 3 columns with equal width */
+  grid-template-rows: repeat(2, 1fr); /* divide the grid into 2 rows */
+  grid-gap: 20px; /* add a 20px gap between each item */
 }
 
 .project-container {
